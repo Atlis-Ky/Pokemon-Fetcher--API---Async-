@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Fetcher</title>
+    <title>Pokémon Fetcher</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
-        <button onclick="fetchData()">Fetch Pokemon</button><br>
+      <h2>Pokémon Finder</h2>
+        <input type="text" id="pokemonName" placeholder="Enter Pokémon name">
+        <button onclick="fetchData()">Fetch Pokémon</button><br>
         
         <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
         
         <p id="successMessage" style="display:none;"></p>
         <p id="error" style="display:none; color: red;"></p>
+    </div>
+
+    <div class="container2">
+      <p>(See below for some input suggestions if you're struggling for ideas)</p>
+      <ul class="listInput">
+        <li>Pikachu</li>
+        <li>Gengar</li>
+        <li>Metang</li>
+        <li>Incineroar</li>
+        <li>Piplup</li>
+        <li>Mew</li>
+        <li>Bulbasaur</li>
+        <li>Magmortar</li>
+        <li>Snorlax</li>
+      </ul>
     </div>
 
     <script src="index.js"></script>

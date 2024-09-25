@@ -6,7 +6,6 @@ body {
   padding: 20px;
 }
 
-/* Styling for the input and button */
 input[type="text"] {
   width: 300px;
   padding: 10px;
@@ -37,7 +36,7 @@ button:hover {
   background-color: #265da8;
 }
 
-/* Centering and styling for the pokemon sprite */
+
 #pokemonSprite {
   display: block;
   margin: 20px auto;
@@ -49,8 +48,17 @@ button:hover {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.container2 {
   max-width: 400px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -59,11 +67,27 @@ button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.listInput {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listInput li {
+  width: 20%;
+  margin: 5px; 
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
 
 input::placeholder {
   color: #aaa;
 }
-
 
 #error {
   color: red;
