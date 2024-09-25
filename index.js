@@ -3,7 +3,7 @@ async function fetchData() {
   const successMessageElement = document.getElementById("successMessage");
   const imgElement = document.getElementById("pokemonSprite");
 
-  // Hide error and success messages initially
+
   errorElement.style.display = "none";
   successMessageElement.style.display = "none";
   imgElement.style.display = "none";
@@ -19,18 +19,21 @@ async function fetchData() {
       const data = await response.json();
       const pokemonSprite = data.sprites.front_default;
 
-    
+
       imgElement.src = pokemonSprite;
       imgElement.style.display = "block";
 
+     
+      const capitalizedPokemonName = pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1);
+
       
-      successMessageElement.textContent = `Gotcha! ${data.name} was caught!`;
+      successMessageElement.textContent = `Gotcha! ${capitalizedPokemonName} was caught!`;
       successMessageElement.style.display = "block";
 
   } catch (error) {
       console.error(error);
 
-     
+  
       errorElement.textContent = error.message;
       errorElement.style.display = "block";
   }
